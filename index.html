@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="./basic.css">
+    <link rel="stylesheet" href="./style.css">
+    <title>Filter</title>
+</head>
+
+<body>
+    <header class="header">
+        <nav class="row">
+            <h1>HaveFun</h1>
+            <div class="search-bar">
+                <i class="fas fa-search search-icon"></i>
+                <input class="search" type="text" placeholder="Explore your own activities">
+            </div>
+        </nav>
+    </header>
+    <section class="section">
+        <div class="menu">
+            <div class="location">
+                <h2>Location</h2>
+                <select name="" id="">
+                    <option value="0">Taiwan</option>
+                    <option value="Taipei">Taipei</option>
+                    <option value="Kaohsiung">Kaohsiung</option>
+                </select>
+            </div>
+            <div class="date">
+                <h2>Date</h2>
+                <label for="fromDate">From</label>
+                <input id="fromDate" type="date">
+                <label for="toDate">To</label>
+                <input id="toDate" type="date">
+            </div>
+            <div class="categories">
+                <h2>Categories</h2>
+                <ul>
+                    <li>ALL</li>
+                    <li>Entertainment</li>
+                    <li>Food</li>
+                    <li>Learning</li>
+                    <li>Outdoors</li>
+                </ul>
+            </div>
+        </div>
+        <div class="main">
+            <h2>Showing
+                <span style="color:#7828B4;">15</span> results by…</h2>
+            <div class="tags">
+                <div class="btn">
+                    <h5>Koahsiung</h5>
+                    <i class="far fa-times-circle"></i>
+                </div>
+                <div class="btn">
+                    <h5>Entertainment</h5>
+                    <i class="far fa-times-circle"></i>
+                </div>
+            </div>
+            <div class="result">
+                <img src="https://picsum.photos/220/220?image=7" alt="假圖">
+                <div class="content">
+                    <h3>Kogi Cosby sweater.</h3>
+                    <p>Donec euismod scelerisque ligula. Maecenas eu varius risus, eu aliquet arcu. Curabitur fermentum suscipit
+                        est, tincidunt mattis lorem luctus id. Donec eget massa a diam condimentum pretium. Aliquam erat
+                        volutpat. Integer ut tincidunt orci. Etiam tristique, elit ut consectetur iaculis, metus lectus mattis
+                        justo, vel mollis eros neque quis augue. Sed lobortis ultrices lacus, a placerat metus rutrum sit
+                        amet. Aenean ut suscipit justo.</p>
+                    <h4>Ethan Foster</h4>
+                    <span>Entertainment</span>
+                    <div class="information">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Kaohsiung City</span>
+                        <i class="far fa-calendar-alt"></i>
+                        <span>2018/5/24 - 2018/5/31</span>
+                    </div>
+                </div>
+            </div>
+            <div class="result">
+                <img src="https://picsum.photos/220/220?image=7" alt="假圖">
+                <div class="content">
+                    <h3>Kogi Cosby sweater.</h3>
+                    <p>Donec euismod scelerisque ligula. Maecenas eu varius risus, eu aliquet arcu. Curabitur fermentum suscipit
+                        est, tincidunt mattis lorem luctus id. Donec eget massa a diam condimentum pretium. Aliquam erat
+                        volutpat. Integer ut tincidunt orci. Etiam tristique, elit ut consectetur iaculis, metus lectus mattis
+                        justo, vel mollis eros neque quis augue. Sed lobortis ultrices lacus, a placerat metus rutrum sit
+                        amet. Aenean ut suscipit justo.</p>
+                    <h4>Ethan Foster</h4>
+                    <span>Entertainment</span>
+                    <div class="information">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Kaohsiung City</span>
+                        <i class="far fa-calendar-alt"></i>
+                        <span>2018/5/24 - 2018/5/31</span>
+                    </div>
+                </div>
+            </div>
+            <div class="result">
+                <img src="https://picsum.photos/220/220?image=7" alt="假圖">
+                <div class="content">
+                    <h3>Kogi Cosby sweater.</h3>
+                    <p>Donec euismod scelerisque ligula. Maecenas eu varius risus, eu aliquet arcu. Curabitur fermentum suscipit
+                        est, tincidunt mattis lorem luctus id. Donec eget massa a diam condimentum pretium. Aliquam erat
+                        volutpat. Integer ut tincidunt orci. Etiam tristique, elit ut consectetur iaculis, metus lectus mattis
+                        justo, vel mollis eros neque quis augue. Sed lobortis ultrices lacus, a placerat metus rutrum sit
+                        amet. Aenean ut suscipit justo.</p>
+                    <h4>Ethan Foster</h4>
+                    <span>Entertainment</span>
+                    <div class="information">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Kaohsiung City</span>
+                        <i class="far fa-calendar-alt"></i>
+                        <span>2018/5/24 - 2018/5/31</span>
+                    </div>
+                </div>
+            </div>
+            <div style="height:41px;">
+                <ul class="page-btns row">
+                    <li>
+                        <i class="fas fa-chevron-left"></i>
+                    </li>
+                    <li>1</li>
+                    <li>2</li>
+                    <li>3</li>
+                    <li>4</li>
+                    <li>5</li>
+                    <li>
+                        <i class="fas fa-chevron-right"></i>
+                    </li>
+                </ul>
+            </div>
+    </section>
+</body>
+
+</html>
