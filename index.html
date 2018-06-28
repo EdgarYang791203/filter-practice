@@ -16,6 +16,9 @@
 </head>
 
 <body>
+    <div id="loading" class="loading">
+        <div class="circle"></div>
+    </div>
     <header class="header">
         <nav class="row">
             <h1>HaveFun</h1>
@@ -29,116 +32,85 @@
         <div class="menu">
             <div class="location">
                 <h2>Location</h2>
-                <select name="" id="">
-                    <option value="0">Taiwan</option>
-                    <option value="Taipei">Taipei</option>
-                    <option value="Kaohsiung">Kaohsiung</option>
+                <select name="area" id="selectorLocation">
+                    <option value="Kaohsiung City">Kaohsiung City</option>
+                    <option value="楠梓區">楠梓區</option>
+                    <option value="左營區">左營區</option>
+                    <option value="鼓山區">鼓山區</option>
+                    <option value="三民區">三民區</option>
+                    <option value="鹽埕區">鹽埕區</option>
+                    <option value="前金區">前金區</option>
+                    <option value="新興區">新興區</option>
+                    <option value="苓雅區">苓雅區</option>
+                    <option value="前鎮區">前鎮區</option>
+                    <option value="旗津區">旗津區</option>
+                    <option value="小港區">小港區</option>
+                    <option value="鳳山區">鳳山區</option>
+                    <option value="大寮區">大寮區</option>
+                    <option value="鳥松區">鳥松區</option>
+                    <option value="林園區">林園區</option>
+                    <option value="仁武區">仁武區</option>
+                    <option value="大樹區">大樹區</option>
+                    <option value="大社區">大社區</option>
+                    <option value="岡山區">岡山區</option>
+                    <option value="路竹區">路竹區</option>
+                    <option value="橋頭區">橋頭區</option>
+                    <option value="梓官區">梓官區</option>
+                    <option value="彌陀區">彌陀區</option>
+                    <option value="永安區">永安區</option>
+                    <option value="燕巢區">燕巢區</option>
+                    <option value="田寮區">田寮區</option>
+                    <option value="阿蓮區">阿蓮區</option>
+                    <option value="茄萣區">茄萣區</option>
+                    <option value="湖內區">湖內區</option>
+                    <option value="旗山區">旗山區</option>
+                    <option value="美濃區">美濃區</option>
+                    <option value="內門區">內門區</option>
+                    <option value="杉林區">杉林區</option>
+                    <option value="甲仙區">甲仙區</option>
+                    <option value="六龜區">六龜區</option>
+                    <option value="茂林區">茂林區</option>
+                    <option value="桃源區">桃源區</option>
+                    <option value="那瑪夏區">那瑪夏區</option>
                 </select>
-            </div>
-            <div class="date">
-                <h2>Date</h2>
-                <label for="fromDate">From</label>
-                <input id="fromDate" type="date">
-                <label for="toDate">To</label>
-                <input id="toDate" type="date">
             </div>
             <div class="categories">
                 <h2>Categories</h2>
-                <ul>
-                    <li>ALL</li>
-                    <li>Entertainment</li>
-                    <li>Food</li>
-                    <li>Learning</li>
-                    <li>Outdoors</li>
-                </ul>
+                <label id="freeLabel" for="free">免費參觀</label>
+                <input id="free" type="checkbox" value="免費參觀">
+                <label id="allDayLabel" for="allDay">全天候開放</label>
+                <input id="allDay" type="checkbox" value="全天候開放">
             </div>
         </div>
         <div class="main">
             <h2>Showing
-                <span style="color:#7828B4;">15</span> results by…</h2>
+                <span id="total" style="color:#7828B4;"></span> results by…</h2>
             <div class="tags">
-                <div class="btn">
-                    <h5>Koahsiung</h5>
+                <div id="areaTag" class="btn">
+                    <h5>Koahsiung City</h5>
                     <i class="far fa-times-circle"></i>
                 </div>
-                <div class="btn">
-                    <h5>Entertainment</h5>
+                <div id="freeTag" class="btn hidden">
+                    <h5>For Free</h5>
+                    <i class="far fa-times-circle"></i>
+                </div>
+                <div id="allDayTag" class="btn hidden">
+                    <h5>All Day</h5>
                     <i class="far fa-times-circle"></i>
                 </div>
             </div>
-            <div class="result">
-                <img src="https://picsum.photos/220/220?image=7" alt="假圖">
-                <div class="content">
-                    <h3>Kogi Cosby sweater.</h3>
-                    <p>Donec euismod scelerisque ligula. Maecenas eu varius risus, eu aliquet arcu. Curabitur fermentum suscipit
-                        est, tincidunt mattis lorem luctus id. Donec eget massa a diam condimentum pretium. Aliquam erat
-                        volutpat. Integer ut tincidunt orci. Etiam tristique, elit ut consectetur iaculis, metus lectus mattis
-                        justo, vel mollis eros neque quis augue. Sed lobortis ultrices lacus, a placerat metus rutrum sit
-                        amet. Aenean ut suscipit justo.</p>
-                    <h4>Ethan Foster</h4>
-                    <span>Entertainment</span>
-                    <div class="information">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <span>Kaohsiung City</span>
-                        <i class="far fa-calendar-alt"></i>
-                        <span>2018/5/24 - 2018/5/31</span>
-                    </div>
-                </div>
+            <div id="showInformation">
+
             </div>
-            <div class="result">
-                <img src="https://picsum.photos/220/220?image=7" alt="假圖">
-                <div class="content">
-                    <h3>Kogi Cosby sweater.</h3>
-                    <p>Donec euismod scelerisque ligula. Maecenas eu varius risus, eu aliquet arcu. Curabitur fermentum suscipit
-                        est, tincidunt mattis lorem luctus id. Donec eget massa a diam condimentum pretium. Aliquam erat
-                        volutpat. Integer ut tincidunt orci. Etiam tristique, elit ut consectetur iaculis, metus lectus mattis
-                        justo, vel mollis eros neque quis augue. Sed lobortis ultrices lacus, a placerat metus rutrum sit
-                        amet. Aenean ut suscipit justo.</p>
-                    <h4>Ethan Foster</h4>
-                    <span>Entertainment</span>
-                    <div class="information">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <span>Kaohsiung City</span>
-                        <i class="far fa-calendar-alt"></i>
-                        <span>2018/5/24 - 2018/5/31</span>
-                    </div>
-                </div>
-            </div>
-            <div class="result">
-                <img src="https://picsum.photos/220/220?image=7" alt="假圖">
-                <div class="content">
-                    <h3>Kogi Cosby sweater.</h3>
-                    <p>Donec euismod scelerisque ligula. Maecenas eu varius risus, eu aliquet arcu. Curabitur fermentum suscipit
-                        est, tincidunt mattis lorem luctus id. Donec eget massa a diam condimentum pretium. Aliquam erat
-                        volutpat. Integer ut tincidunt orci. Etiam tristique, elit ut consectetur iaculis, metus lectus mattis
-                        justo, vel mollis eros neque quis augue. Sed lobortis ultrices lacus, a placerat metus rutrum sit
-                        amet. Aenean ut suscipit justo.</p>
-                    <h4>Ethan Foster</h4>
-                    <span>Entertainment</span>
-                    <div class="information">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <span>Kaohsiung City</span>
-                        <i class="far fa-calendar-alt"></i>
-                        <span>2018/5/24 - 2018/5/31</span>
-                    </div>
-                </div>
+            <div class="show-detail">
+
             </div>
             <div style="height:41px;">
                 <ul class="page-btns row">
-                    <li>
-                        <i class="fas fa-chevron-left"></i>
-                    </li>
-                    <li>1</li>
-                    <li>2</li>
-                    <li>3</li>
-                    <li>4</li>
-                    <li>5</li>
-                    <li>
-                        <i class="fas fa-chevron-right"></i>
-                    </li>
                 </ul>
             </div>
     </section>
+    <script src="./app.js"></script>
 </body>
 
 </html>
