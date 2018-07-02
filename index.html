@@ -87,7 +87,7 @@
                 <span id="total" style="color:#7828B4;"></span> results by…</h2>
             <div class="tags">
                 <div id="areaTag" class="btn">
-                    <h5>Koahsiung City</h5>
+                    <h5>Kaohsiung City</h5>
                     <i class="far fa-times-circle"></i>
                 </div>
                 <div id="freeTag" class="btn hidden">
@@ -99,18 +99,23 @@
                     <i class="far fa-times-circle"></i>
                 </div>
             </div>
+            <div id="mapBg" class="mapBg hidden">
+                <div id="map"></div>
+            </div>
             <div id="showInformation">
 
             </div>
-            <div class="show-detail">
+            <div id="showDetail" class="show-detail hidden">
 
             </div>
-            <div style="height:41px;">
+            <div id="pages">
                 <ul class="page-btns row">
                 </ul>
             </div>
     </section>
     <script src="./app.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCavdJPTcq3-sl_drdqFrdFF8d3t0FSp-A&callback=initMap" async
+        defer></script>
 </body>
 
 </html>
