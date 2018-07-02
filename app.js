@@ -347,6 +347,7 @@ $(window).ready(function () {
 });
 
 function initMap(x, y) {
+    var markerTitle = event.target.parentElement.children[0].textContent;
     var map;
 
     var mapCenter = {
@@ -361,8 +362,8 @@ function initMap(x, y) {
     });
     var maker = new google.maps.Marker({
         position: mapCenter,
-        map: map
-        //title: "",
+        map: map,
+        title: markerTitle
         //icon: "travel.png"
     });
 }
